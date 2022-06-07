@@ -29,6 +29,12 @@
 	background-color: #eff2f5;
 }
 
+.messageSender__top > form > button {
+	display: none;
+}
+
+ 
+
 .messageSender__input {
 	flex: 1;
 }
@@ -44,6 +50,7 @@
 	align-items: center;
 	color: gray;
 	margin: 5px;
+	cursor: pointer;
 }
 
 .messageSender__option > h3 {

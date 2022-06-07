@@ -1,5 +1,6 @@
 .storyReel{
-	display: flex;
+	display: flex; 
+	justify-content: center;
 }
 
 .storyReel__story{
