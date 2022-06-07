@@ -1,12 +1,12 @@
 import React from 'react'
 import './Header.css'
-import SearchIcon from '@mui/icons-material/Search'; 
+import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import FlagIcon from '@mui/icons-material/Flag';
 import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined';
 import StorefrontOutlinedIcon from '@mui/icons-material/StorefrontOutlined';
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
-import {Avatar,IconButton} from '@mui/material';
+import { Avatar, IconButton } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import ForumIcon from '@mui/icons-material/Forum';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
@@ -29,44 +29,44 @@ function Header() {
 			<div className="header__center">
 				<div className="header__option header__option--active">
 
-				<HomeIcon fontSize="large" />
+					<HomeIcon fontSize="large" />
 				</div>
 				<div className="header__option">
 
-				<FlagIcon fontSize="large" />
+					<FlagIcon fontSize="large" />
 				</div>
 				<div className="header__option">
 
-				<SubscriptionsOutlinedIcon fontSize="large" />
+					<SubscriptionsOutlinedIcon fontSize="large" />
 				</div>
 				<div className="header__option">
 
-				<StorefrontOutlinedIcon fontSize="large" />
+					<StorefrontOutlinedIcon fontSize="large" />
 				</div>
 				<div className="header__option">
 
-				<SupervisedUserCircleIcon fontSize="large" />
+					<SupervisedUserCircleIcon fontSize="large" />
 				</div>
 			</div>
 			<div className="header__right">
 
-			<div className="header__info">
-				<Avatar />
-				<h4>Sezer</h4>
-			</div>
+				<div className="header__info">
+					<Avatar />
+					<h4>Sezer</h4>
+				</div>
 
-			<IconButton>
-				<AddIcon />
-			</IconButton>
-			<IconButton>
-				<ForumIcon />
-			</IconButton>
-			<IconButton>
-				<NotificationsActiveIcon />
-			</IconButton>
-			<IconButton>
-				<ExpandMoreIcon />
-			</IconButton>
+				<IconButton>
+					<AddIcon />
+				</IconButton>
+				<IconButton>
+					<ForumIcon />
+				</IconButton>
+				<IconButton>
+					<NotificationsActiveIcon />
+				</IconButton>
+				<IconButton>
+					<ExpandMoreIcon />
+				</IconButton>
 			</div>
 		</header>
 	)
