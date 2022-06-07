@@ -20,7 +20,8 @@
 }
 
 .messageSender__top > form > input{
-	outline-width: 0;
+	/*outline-width: 0;*/
+	outline: none;
 	border: none;
 	padding: 5px 20px;
 	margin: 0 10px;
@@ -34,11 +35,11 @@
 
 .messageSender__bottom{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-evenly; 
 }
 
 .messageSender__option {
-	padding: 0 10px;
+	padding: 10px;
 	display: flex;
 	align-items: center;
 	color: gray;
