@@ -45,7 +45,7 @@
 }
 
 .messageSender__option {
-	padding: 10px;
+	padding: 0 40px;
 	display: flex;
 	align-items: center;
 	color: gray;

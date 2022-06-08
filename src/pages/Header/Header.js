@@ -54,8 +54,8 @@ function Header() {
 			<div className="header__right">
 
 				<div className="header__info">
-					<Avatar src={user.photoURL} />
-					<h4>{user.displayName}</h4>
+					<Avatar src={user.photoURL} style={{height:30,width:30}} />
+					<span>{user.displayName.split(" ")[0]}</span>
 				</div>
 
 				<IconButton>

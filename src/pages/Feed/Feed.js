@@ -10,7 +10,7 @@ function Feed() {
   const [posts, setPosts] = useState([])
 
   useEffect(()=>{ 
-    const unsubscribe = onSnapshot(query(collection(db, "posts"),orderBy("timestamp", "desc")), (snapshot) => {
+    onSnapshot(query(collection(db, "posts"),orderBy("timestamp", "desc")), (snapshot) => {
       const posts = [];
       snapshot.forEach((doc) => {
           posts.push({id:doc.id,data:doc.data()});

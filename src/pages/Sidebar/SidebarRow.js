@@ -5,10 +5,10 @@ import { Avatar, } from '@mui/material';
 function SidebarRow({ src, Icon, title }) {
   return (
     <div className="sidebarRow">
-      {src && <Avatar src={src} />}
+      {src && <Avatar src={src} style={{height:30,width:30}} />}
       {Icon && <Icon />}
 
-      <h4>{title}</h4>
+      <span>{title}</span>
 
     </div>
   )
