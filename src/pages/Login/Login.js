@@ -1,7 +1,7 @@
 import React from 'react';
 import './Login.css'
 import { Button } from '@mui/material';
-import { GoogleAuthProvider, auth, provider, signInWithPopup } from "../../firebase"
+import { auth, provider, signInWithPopup } from "../../firebase"
 import { actionTypes } from '../../store/reducer'
 import { useStateValue } from '../../store/StateProvider'
 
@@ -18,8 +18,7 @@ function Login() {
 					user
 				})
 			}).catch((error) => {
-				const errorMessage = error.message;
-				const credential = GoogleAuthProvider.credentialFromError(error);
+				const errorMessage = error.message; 
 				console.log(errorMessage)
 			});
 

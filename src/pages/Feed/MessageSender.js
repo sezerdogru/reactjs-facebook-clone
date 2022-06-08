@@ -5,11 +5,11 @@ import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import {useStateValue } from '../../store/StateProvider'
-import db, {doc, collection, addDoc, Timestamp} from "../../firebase"
+import db, {collection, addDoc, Timestamp} from "../../firebase"
 
 function MessageSender() {
 
-	const [{user}, dispatch] = useStateValue()
+	const [{user}] = useStateValue()
 
 	const [input, setInput] = useState('')
 	const [imageURL, setImageURL] = useState('')
