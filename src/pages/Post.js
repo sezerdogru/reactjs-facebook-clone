@@ -1,5 +1,5 @@
 import React from 'react';
-import './Post.css'
+import '../styles/Post.scss'
 import { Avatar } from '@mui/material';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';

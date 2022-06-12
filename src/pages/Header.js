@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.css'
+import '../styles/Header.scss'
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import FlagIcon from '@mui/icons-material/Flag';
@@ -10,12 +10,11 @@ import { Avatar, IconButton } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import ForumIcon from '@mui/icons-material/Forum';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import {useStateValue } from '../../store/StateProvider'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'; 
 
 function Header() { 
-	const [{user}] = useStateValue()
-
+ 	const user = {}
+ 	
 	return (
 
 		<header className="header">

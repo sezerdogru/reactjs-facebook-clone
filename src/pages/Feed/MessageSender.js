@@ -1,28 +1,21 @@
 import React, { useState } from 'react';
 import { Avatar } from '@mui/material';
-import './MessageSender.css'
+import '../../styles/MessageSender.scss'
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
-import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
-import {useStateValue } from '../../store/StateProvider'
-import db, {collection, addDoc, Timestamp} from "../../firebase"
+import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon'; 
 
 function MessageSender() {
-
-	const [{user}] = useStateValue()
+ 
 
 	const [input, setInput] = useState('')
 	const [imageURL, setImageURL] = useState('')
 
+	const user = {}
+
 	const handleSubmit = e =>  {
 		e.preventDefault()
-		  addDoc(collection(db,"posts"), {
-		  image: imageURL,
-		  username: user.displayName,
-		  message: input,
-		  timestamp: Timestamp.fromDate(new Date()),
-		  profilePic: user.photoURL,
-		});
+		  
 		setInput("")
 		setImageURL("")
 	}

@@ -1,16 +1,15 @@
 import React from 'react';
-import './Sidebar.css'
+import '../../styles/Sidebar.scss'
 import SidebarRow from './SidebarRow'
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined'; 
 import EmojiFlagsIcon from '@mui/icons-material/EmojiFlags';
 import PeopleIcon from '@mui/icons-material/People';
 import ChatIcon from '@mui/icons-material/Chat';
 import StorefrontIcon from '@mui/icons-material/Storefront';
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
-import {useStateValue } from '../../store/StateProvider'
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary'; 
 
-function Sidebar() {
-	const [{user}, dispatch] = useStateValue()
+function Sidebar() { 
+	const user = {}
 	return (
 		<div className="sidebar">
 			<SidebarRow src={user.photoURL} title={user.displayName} /> 
