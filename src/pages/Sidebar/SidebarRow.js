@@ -4,7 +4,7 @@ import '../../styles/SidebarRow.scss'
 function SidebarRow({ src, title }) {
   return (
     <div className="sidebarRow">
-      <img src={src} />  
+      <img src={src} alt="" />  
       <span>{title}</span> 
     </div>
   )

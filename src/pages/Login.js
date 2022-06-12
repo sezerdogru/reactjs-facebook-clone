@@ -30,12 +30,12 @@ function Login() {
 						<input type="text" placeholder="Email address or phone number" />
 						<input type="password" placeholder="Password" /> 
 						<Button className="login__button" type="submit" onClick={signIn}>Log In</Button> 
-						<a href="">Forgotten password?</a>
+						<a href="/">Forgotten password?</a>
 						<hr />
 						<Button className="login__button--create" type="submit" onClick={(e) => e.preventDefault()}>Create New Account</Button>
 					</form>  
 				</div>
-				<span><a href="">Create a Page</a> for a celebrity, brand or business.</span>
+				<span><a href="/">Create a Page</a> for a celebrity, brand or business.</span>
 			</div> 
 		</div>
 	)
