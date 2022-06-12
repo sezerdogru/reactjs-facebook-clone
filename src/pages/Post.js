@@ -7,7 +7,7 @@ import NearMeIcon from '@mui/icons-material/NearMe';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ExpandMoreOutlined from '@mui/icons-material/ExpandMoreOutlined';
 
-function Post({ profilePic, image, username, timestamp, message }) {
+function Post({ profilePic, image, username, time, message }) {
   return (
     <div className="post">
       <div className="post__top">
@@ -17,7 +17,7 @@ function Post({ profilePic, image, username, timestamp, message }) {
         />
         <div className="post__topInfo">
           <span>{username}</span><br/>
-          <span className="post__topInfo__date">{new Date(timestamp?.toDate()).toUTCString()}</span>
+          <span className="post__topInfo__date">{time}</span>
         </div>
 
       </div>

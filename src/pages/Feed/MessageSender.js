@@ -1,57 +1,41 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import { Avatar } from '@mui/material';
 import '../../styles/MessageSender.scss'
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon'; 
 
-function MessageSender() {
- 
-
-	const [input, setInput] = useState('')
-	const [imageURL, setImageURL] = useState('')
-
-	const user = {}
-
-	const handleSubmit = e =>  {
-		e.preventDefault()
-		  
-		setInput("")
-		setImageURL("")
-	}
+function MessageSender() { 
+	const user = {
+ 		photoURL:"https://avatars.githubusercontent.com/u/10113841?v=4",
+ 		displayName: "Mick Thomson"
+ 	} 
 
 	return (
 		<div className="messageSender">
 			<div className="messageSender__top">
 				<Avatar src={user.photoURL} />
-				<form onSubmit={handleSubmit}>
-					<input
-						value={input}
-						onChange={(e) => setInput(e.target.value)}
+				<form>
+					<input 
 						className="messageSender__input"
-						placeholder={"Whats's on your mind"}
-					/>
-					<input
-						value={imageURL}
-						className="messageSender__input"
-						onChange={(e) => setImageURL(e.target.value)}
-						placeholder="image URL (Optional)" />
-						<button type="submit" onClick={handleSubmit}></button>
+						placeholder={"Whats's on your mind ?"}
+					/> 
 				</form>
 
 			</div>
+			<hr />
 			<div className="messageSender__bottom">
 				<div className="messageSender__option">
 					<VideocamIcon style={{ color: 'red' }} />
-					<h3>Live video</h3>
+					<span>Live video</span>
 				</div>
 				<div className="messageSender__option">
 					<PhotoLibraryIcon style={{ color: 'green' }} />
-					<h3>Photo/Video</h3>
+					<span>Photo/Video</span>
 				</div>
 				<div className="messageSender__option">
 					<InsertEmoticonIcon style={{ color: 'orange' }} />
-					<h3>Feeling/Activity</h3>
+					<span>Feeling/Activity</span>
 				</div>
 			</div>
 		</div>

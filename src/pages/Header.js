@@ -13,7 +13,10 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'; 
 
 function Header() { 
- 	const user = {}
+ 	const user = {
+ 		photoURL:"https://avatars.githubusercontent.com/u/10113841?v=4",
+ 		displayName: "Mick Thomson"
+ 	}
  	
 	return (
 

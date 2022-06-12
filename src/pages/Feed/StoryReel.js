@@ -33,8 +33,9 @@ function StoryReel() {
   ]
   return (
     <div className="storyReel">
-      {stories.map(story=>(
+      {stories.map((story,i)=>(
         <Story
+          key={i}
           image={story.image}
           profileSrc={story.profileSrc}
           title={story.title}

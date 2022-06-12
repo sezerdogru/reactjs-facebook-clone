@@ -1,4 +1,17 @@
+@import "mixins";
+
 .sidebar{
 	padding: 0 10px;
-	flex: 0.33;
+	flex: 0.2;
+	position: sticky; 
+	height:400px;
+	overflow:hidden;
+
+	&:hover { 
+		overflow-y: scroll;
+	}
+
+	hr {
+		@include hr();
+	}
 }

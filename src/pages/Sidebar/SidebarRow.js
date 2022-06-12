@@ -1,15 +1,11 @@
 import React from 'react';
-import '../../styles/SidebarRow.scss'
-import { Avatar, } from '@mui/material';
+import '../../styles/SidebarRow.scss' 
 
-function SidebarRow({ src, Icon, title }) {
+function SidebarRow({ src, title }) {
   return (
     <div className="sidebarRow">
-      {src && <Avatar src={src} style={{height:30,width:30}} />}
-      {Icon && <Icon />}
-
-      <span>{title}</span>
-
+      <img src={src} />  
+      <span>{title}</span> 
     </div>
   )
 }

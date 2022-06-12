@@ -1,16 +1,20 @@
-import React , {useState, useEffect} from 'react';
+import React from 'react';
 import StoryReel from './StoryReel'
 import MessageSender from './MessageSender'
 import Post from '../Post'
 import '../../styles/Feed.scss' 
 
-function Feed() {
-
-  const [posts, setPosts] = useState([])
-
-  useEffect(()=>{ 
-    
-  },[])
+function Feed() { 
+  const posts = [
+    {
+      id:1,
+      profilePic:"https://avatars.githubusercontent.com/u/10113841?v=4",
+      image:"https://avatars.githubusercontent.com/u/10113841?v=4",
+      username:"Mick Thomson",
+      time:"5d",
+      message:"sdsd"
+    }
+  ]
   return (
     <div className="feed">
       <StoryReel />
@@ -18,11 +22,11 @@ function Feed() {
       {posts.map(post => (
           <Post
             key={post.id}
-            profilePic={post.data.profilePic}
-            image={post.data.image}
-            username={post.data.username}
-            timestamp={post.data.timestamp}
-            message={post.data.message}
+            profilePic={post.profilePic}
+            image={post.image}
+            username={post.username}
+            time={post.time}
+            message={post.message}
           />
       ))}
 
