@@ -9,9 +9,7 @@
 	@include box(); 
 
 	hr {
-		@include hr();
-		width:95%; 
-		margin-bottom: 0;
+		@include hr(0); 
 	}
 }
 
@@ -52,9 +50,8 @@
 .messageSender__bottom{
 	display: flex;
 	justify-content: space-evenly; 
-	padding:0 10px;
-}
-
+	padding:0 10px; 
+} 
 .messageSender__option {
 	padding: 10px;
 	flex:1;
@@ -64,6 +61,8 @@
 	color: gray;
 	margin: 5px 0;
 	cursor: pointer;
+
+	
 
 	span {
 		font-size: medium;

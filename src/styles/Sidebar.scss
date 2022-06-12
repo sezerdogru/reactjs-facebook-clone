@@ -4,7 +4,8 @@
 	padding: 0 10px;
 	flex: 0.2;
 	position: sticky; 
-	height:400px;
+	top:76px;
+	height: calc(100vh - 209.53px);
 	overflow:hidden;
 
 	&:hover { 
@@ -12,6 +13,6 @@
 	}
 
 	hr {
-		@include hr();
+		@include hr(0);
 	}
 }
