@@ -9,7 +9,7 @@ function Feed() {
     {
       id:1,
       profilePic:"https://avatars.githubusercontent.com/u/10113841?v=4",
-      image:"https://avatars.mds.yandex.net/i?id=84dbd50839c3d640ebfc0de20994c30d-4473719-images-taas-consumers&n=27&h=480&w=480",
+      image:"https://media.baamboozle.com/uploads/images/418213/1629292799_265774_url.jpeg",
       username:"Mick Thomson",
       time:"5d",
       message:"Such a great day!"
